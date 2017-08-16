@@ -1,0 +1,110 @@
+.cfx-dialog {
+    position: fixed;
+    left: 0;
+    top: 35%;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+.cfx-dialog-mark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.3;
+    z-index: 99;
+}
+.cfx-dialog-main {
+    position: absolute;
+    height: auto;
+    background: #fff;
+    border: 4px solid #ddd;
+    padding: 10px;
+    z-index: 100;
+}
+
+.cfx-dialog .dialog-title {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.cfx-dialog .warn:before,
+.cfx-dialog .error:before,
+.cfx-dialog .info:before,
+.cfx-dialog .log:before {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    margin-bottom: -4px;
+}
+.cfx-dialog .error:before {
+    background: url("./img/icon.png") no-repeat 0 0;
+}
+.cfx-dialog .warn:before {
+    background: url("./img/icon.png") no-repeat 0 -19px;
+}
+.cfx-dialog .info:before {
+    background: url("./img/icon.png") no-repeat 0 -39px;
+}
+.cfx-dialog .log:before {
+    background: url("./img/icon.png") no-repeat 0 -39px;
+}
+
+.cfx-dialog .dialog-title .cfx-dialog-close {
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    background: url("./img/icon.png") no-repeat -1px -60px;
+    cursor: pointer;
+    float: right;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease-out;
+    transition: 0.4s ease-out;
+}
+.cfx-dialog .dialog-title .cfx-dialog-close:hover {
+     -webkit-transform: rotateZ(180deg);
+     -moz-transform: rotateZ(180deg);
+     -o-transform: rotateZ(180deg);
+     -ms-transform: rotateZ(180deg);
+     transform: rotateZ(180deg);
+ }
+
+.cfx-dialog .dialog-content {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #000;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+.cfx-dialog .dialog-bottom {
+    text-align: right;
+}
+
+.cfx-dialog .dialog-sure,
+.cfx-dialog .dialog-cancel {
+    display: inline-block;
+    min-width: 38px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    padding: 0 5px;
+    background: #4fbdf7;
+    text-decoration: none;
+    border: 1px solid #4fbdf7;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.cfx-dialog .dialog-sure:hover,
+.cfx-dialog .dialog-cancel:hover {
+    background: #a5d4f7;
+}
