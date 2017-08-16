@@ -8,6 +8,9 @@
 # install dependencies
 npm install
 
+# npm install时phantomjs-prebuilt模块安装不上的处理
+将模块从package.json中删除后npm install当前所有模块；安装完成后，使用命令npm install phantomjs-prebuilt@2.1.14 --ignore-scripts完成此模块安装
+
 # serve with hot reload at localhost:8080
 npm run dev
 
